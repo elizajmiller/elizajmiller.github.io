@@ -181,6 +181,66 @@ a.text-warning:focus, a.text-warning:hover {
 a.text-danger:focus, a.text-danger:hover {
   color: #c9302c; }
 
+.hidden-xs-up {
+  display: none !important; }
+
+@media (max-width: 543px) {
+  .hidden-xs-down {
+    display: none !important; } }
+
+@media (min-width: 544px) {
+  .hidden-sm-up {
+    display: none !important; } }
+
+@media (max-width: 767px) {
+  .hidden-sm-down {
+    display: none !important; } }
+
+@media (min-width: 768px) {
+  .hidden-md-up {
+    display: none !important; } }
+
+@media (max-width: 991px) {
+  .hidden-md-down {
+    display: none !important; } }
+
+@media (min-width: 992px) {
+  .hidden-lg-up {
+    display: none !important; } }
+
+@media (max-width: 1199px) {
+  .hidden-lg-down {
+    display: none !important; } }
+
+@media (min-width: 1200px) {
+  .hidden-xl-up {
+    display: none !important; } }
+
+.hidden-xl-down {
+  display: none !important; }
+
+.visible-print-block {
+  display: none !important; }
+  @media print {
+    .visible-print-block {
+      display: block !important; } }
+
+.visible-print-inline {
+  display: none !important; }
+  @media print {
+    .visible-print-inline {
+      display: inline !important; } }
+
+.visible-print-inline-block {
+  display: none !important; }
+  @media print {
+    .visible-print-inline-block {
+      display: inline-block !important; } }
+
+@media print {
+  .hidden-print {
+    display: none !important; } }
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -3781,9 +3841,14 @@ h2 {
   line-height: 3rem;
   margin-bottom: 1.5rem; }
 
-h3, h4 {
+h3 {
   font-size: 1.75rem;
   font-weight: 300; }
+
+h4 {
+  font-size: 2.25rem;
+  font-weight: 300;
+  margin-bottom: 0; }
 
 sub {
   bottom: -2.6rem;
@@ -4003,6 +4068,7 @@ li {
   border: 2px solid #484848;
   border-radius: 15px;
   bottom: 50px;
+  font-size: 1.375rem;
   left: 50%;
   margin-left: -30rem;
   padding: 1.125rem;
@@ -4031,22 +4097,96 @@ li {
 
 @media (max-width: 1199px) {
   html {
-    font-size: 13px; } }
+    font-size: 13px; }
+  #clinic {
+    height: 600px; } }
 
 @media (max-width: 991px) {
   html {
-    font-size: 10px; } }
+    font-size: 10px; }
+  #clinic {
+    height: 550px; } }
 
 @media (max-width: 767px) {
   html {
     font-size: 8px; }
   #lead {
-    margin: 4.5rem 2rem 3rem; } }
+    margin: 5rem 2.25rem 3rem; }
+  #about h2 {
+    font-size: 3.375rem;
+    line-height: 3.875rem; }
+  #about p {
+    font-size: 1.75rem; }
+  #profileImage {
+    margin: 0; }
+  #profileCopy {
+    padding-left: 3.5rem; }
+  #quote {
+    font-size: 1.75rem;
+    line-height: 2rem;
+    margin: 3rem 1.2rem; }
+  #focus p {
+    font-size: 1.625rem; }
+  #focus ul {
+    margin-bottom: 0; }
+  #focus li {
+    font-size: 1.5rem; }
+  #focus .fa {
+    font-size: 1.5rem; }
+  #rightColumn {
+    margin-left: 0; }
+  #clinic {
+    height: 400px; }
+  #clinicInfo ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    margin-bottom: 1.5rem; }
+  #clinicInfo li {
+    font-size: 1.5rem;
+    height: 2.5rem; } }
 
 @media (max-width: 543px) {
   html {
-    font-size: 10px; }
+    font-size: 7px; }
+  #header {
+    padding-top: 28.5rem; }
   #phone {
     border-radius: 0;
+    font-size: 2.25rem;
+    padding: 2rem 2rem;
     top: 0;
+    width: 100%; }
+    #phone .fa {
+      font-size: 2.5rem; }
+    #phone .number {
+      font-size: 2.5rem;
+      margin-left: 1.75rem; }
+  #lead {
+    font-size: 2rem;
+    line-height: 2.75rem;
+    margin: 5.75rem 3rem 3rem;
+    font-weight: 300; }
+  #logo {
+    top: 14.375rem; }
+  #profileImage {
+    margin: 0 10rem;
+    max-width: 280px; }
+  #profileCopy {
+    padding: 6rem 4.75rem 0 4.75rem; }
+  #services h2 {
+    font-size: 3.375rem;
+    line-height: 3.875rem;
+    margin-bottom: 4.5rem; }
+  #services div {
+    padding: 0 1.5rem; }
+  #clinic {
+    height: 460px; }
+  #clinicInfo {
+    border: 0;
+    border-radius: 0;
+    bottom: 32px;
+    left: 0;
+    margin: 0;
+    position: absolute;
     width: 100%; } }
