@@ -4317,8 +4317,8 @@ li {
   #about p {
     font-size: 2rem; }
   #profileImage {
-    margin: 0 10rem;
-    max-width: 280px; }
+    margin: 0 auto;
+    max-width: 260px; }
   #profileCopy {
     padding: 6rem 4.75rem 0 4.75rem; }
   #focus p {
@@ -4363,6 +4363,8 @@ li {
   h3 {
     font-size: 2.75rem;
     font-weight: 300; }
+  #profileImage {
+    max-width: 200px; }
   .service {
     min-height: 18rem;
     margin-bottom: 6rem; }
