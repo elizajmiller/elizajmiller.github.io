@@ -12,17 +12,19 @@
     <!--link rel="canonical" href="http://elizabethmiller.ca"!-->
 
     <!-- Social: Twitter -->
-    <!--meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Elizabeth Miller, ND">
     <meta name="twitter:description" content="Naturopathic Physician based out of North Vancouver who values kind, compassionate, patient-centered care.">
-    <meta name="twitter:image:src" content=""!-->
+    <meta name="twitter:image:src" content="http://elizabethmiller.ca/assets/img/tc.png">
 
     <!-- Social: Facebook / Open Graph -->
-    <!--meta property="og:url" content="http://elizabethmiller.ca">
+    <meta property="og:url" content="http://elizabethmiller.ca">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Elizabeth Miller, ND">
-    <meta property="og:image" content=""/>
-    <meta property="og:description" content="Naturopathic Physician based out of North Vancouver who values kind, compassionate, patient-centered care."!-->
+    <meta property="og:image" content="http://elizabethmiller.ca/assets/img/og.png"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta property="og:description" content="Naturopathic Physician based out of North Vancouver who values kind, compassionate, patient-centered care.">
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300,700,800' rel='stylesheet' type='text/css'>
 
@@ -39,11 +41,22 @@
     <!-- endinject -->
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfwPOopiELZx6Q6MOTYxJMTavWWYB6QIw"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-80317146-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <!--script src="http://localhost:35729/livereload.js"></script!-->
 </head>
 <body>
     <div>
         <section id="header">
-            <div id="phone"><span>Book an Appointment</span><span class="number"><i class="fa fa-phone" aria-hidden="true"></i> 604-929-5772</span></div>
+            <div id="phone"><span>Book an Appointment</span><i class="fa fa-phone" aria-hidden="true"></i><span class="number"> 604-929-5772</span></div>
             <div class="container">
                 <h1>Elizabeth Miller<sub>ND</sub></h1>
                 <p id="lead">Elizabeth Miller is a Naturopathic Physician based out of North Vancouver who values kind, compassionate, patient-centered care.</p>
@@ -89,15 +102,15 @@
             <div class="container">
                 <h2>Offering a wide range of Naturopathic services</h2>
                 <div class="row" id="serviceIcons">
-                    <div class="service col-sm-4 col-xs-6">
+                    <div class="service col-sm-4 col-xs-4">
                         <div class="service-icon center-block service-acupuncture"></div>
                         <h3 class="center-block">Acupuncture</h3>
                     </div>
-                    <div class="service col-sm-4 col-xs-6">
+                    <div class="service col-sm-4 col-xs-4">
                         <div class="service-icon center-block service-hormonal"></div>
                         <h3 class="center-block">Bio-Identical</br>Hormone Therapy</h3>
                     </div>
-                    <div class="service col-sm-4 col-xs-6">
+                    <div class="service col-sm-4 col-xs-4">
                         <div class="service-icon center-block service-botanical"></div>
                         <h3 class="center-block">Botanical Medicine</h3>
                     </div>
@@ -122,7 +135,7 @@
                     <span><i class="fa fa-phone" aria-hidden="true"></i> Please call <span class="number">604-929-5772</span> to book your appointment today.</span>
                 </div>
                 <div id="bookOnline">
-                    <span>Or you can click here to: </span><button type="button" class="btn btn-primary">Book an Appointment Online <i class="fa fa-caret-right" aria-hidden="true"></i></button>
+                    <span>Or click here to: </span><button type="button" class="btn btn-primary" onclick="window.open('https://clients.mindbodyonline.com/classic/home?studioid=37905'); return false;">Book an Appointment Online <i class="fa fa-caret-right" aria-hidden="true"></i></button>
                 </div>
             </div>
         </section>
