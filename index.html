@@ -52,7 +52,17 @@
         ga('send', 'pageview');
 
     </script>
-    <!--script src="http://localhost:35729/livereload.js"></script!-->
+
+    <script>
+        var trackOutboundLink = function(url) {
+            ga('send', 'event', 'outbound', 'click', url, {
+                'transport': 'beacon',
+                'hitCallback': function(){
+                    window.open(url);
+                }
+            });
+        }
+    </script>
 </head>
 <body>
     <div>
@@ -75,7 +85,7 @@
                     </div>
                     <div id="profileCopy" class="col-sm-8">
                         <h2>Devoted to helping clients through natural medicine and wellness lifestyle</h2>
-                        <p class="muted">Elizabeth's education includes a Bachelor of Science in Nursing at the University of Ottawa and a four-year naturopathic medical program at the Canadian College of Naturopathic Medicine and Boucher Institute of Naturopathic Medicine.</p>
+                        <p class="muted">Elizabeth's education includes a Bachelor of Science in Nursing at the University of Ottawa and a four-year naturopathic medical program at the <a href="http://www.ccnm.edu/" onclick="trackOutboundLink('http://www.ccnm.edu/'); return false;">Canadian College of Naturopathic Medicine</a> and <a href="http://www.binm.org/" onclick="trackOutboundLink('http://www.binm.org/'); return false;">Boucher Institute of Naturopathic Medicine</a>.</p>
                         <div id="focus">
                             <p class="muted">Elizabeth Miller provides a general family practice rooted in mind-body medicine and the facilitation of physical, mental / emotional, or spiritual healing with a focus in the following areas:</p>
                             <div class="row muted">
@@ -136,13 +146,13 @@
                     <span><i class="fa fa-phone" aria-hidden="true"></i> Please call <span class="number">604-929-5772</span> to book your appointment today.</span>
                 </div>
                 <div id="bookOnline">
-                    <span>Or click here to: </span><button type="button" class="btn btn-primary" onclick="window.open('https://clients.mindbodyonline.com/classic/ws?studioid=37905&stype=-9&sView=day&sLoc=0&sTrn=22'); return false;">Book an Appointment Online <i class="fa fa-caret-right" aria-hidden="true"></i></button>
+                    <span>Or click here to: </span><a href="https://clients.mindbodyonline.com/classic/ws?studioid=37905&stype=-9&sView=day&sLoc=0&sTrn=22" onclick="trackOutboundLink('https://clients.mindbodyonline.com/classic/ws?studioid=37905&stype=-9&sView=day&sLoc=0&sTrn=22'); return false;"><button type="button" class="btn btn-primary">Book an Appointment Online <i class="fa fa-caret-right" aria-hidden="true"></i></button></a>
                 </div>
             </div>
         </section>
         <section id="clinic">
             <div id="clinicInfo">
-                <h4><a href="http://marinedrivenaturopathic.com/">Marine Drive Naturopathic Clinic</a></h4>
+                <h4><a href="http://marinedrivenaturopathic.com/" onclick="trackOutboundLink('http://marinedrivenaturopathic.com/'); return false;">Marine Drive Naturopathic Clinic</a></h4>
                 <p>1277 Marine Drive, North Vancouver, BC</p>
                 <ul class="list-unstyled">
                     <li>Tuesday: 9am - 5pm</li>
