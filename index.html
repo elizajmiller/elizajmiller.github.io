@@ -55,11 +55,9 @@
 
     <script>
         var trackOutboundLink = function(url, type) {
+            window.open(url);
             ga('send', 'event', 'outbound', 'click', type, {
-                'transport': 'beacon',
-                'hitCallback': function(){
-                    window.open(url);
-                }
+                'transport': 'beacon'
             });
         }
     </script>
